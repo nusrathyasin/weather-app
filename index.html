@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      			<!-- Library of Bootstrap -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     	    		<!-- Library of jQuery -->
+      <script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+           		<!-- Font style-->
+	    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+      			<!-- CSS file-->
+      <link href="style.css" rel="stylesheet" type="text/css" />
+	   		 <!-- Title -->
+	    <title>Weather App</title>
+</head>
+<body>
+	<div class="container">
+	<!--Header-->
+		<h1 class="text-center" style="border-bottom:1px solid white;padding:20px;font-size:50px"><b>Weather App</b></h1>
+		<input type="text" id="city" placeholder="Search more cities? Type City Name here...">
+		<button class="btn btn-lg btn-info">Search</button>
+	<!--content-->
+	<div class="box">
+	<!--location-->
+		<div id="box1">
+			<div class="text-center" id="locatn">
+				<img src="https://cdn.codemyui.com/wp-content/uploads/2016/08/Circular-Water-Fill-Loading-Animation.gif" height="200" width="400"/>
+			</div>
+			<!--temperature-->
+			<div id="num" class="text-center" >
+				<h1 ><span id="temp">25</span><sup><span style="font-size:18px;color:red;cursor:pointer" id="degC"> &degC |</span> <span style="font-size:18px;cursor:pointer" id="degF">&degF </span> </sup></h1>
+			</div>
+		</div>
+		<!--Parameters-Wind,Humidity,minTemp and maxTemp-->
+		<div id="box2" >
+			<div id="icon" class="text-center" style="margin-top:15px"></div>
+				<div id="param">
+					<div id="param1"></div>
+					<div id="param2"></div>
+					<div id="param3"></div>
+				</div>
+			</div>
+		</div>
+		<!--Time and date-->
+		<div id="box3">
+			<div id="time"></div>
+			<div id="dte"></div>
+		</div>
+    <footer class="text-center">
+		  <p>Made with <span class="glyphicon glyphicon-heart"></span> by Nusrath Yasin for Coderstrust & Freecodecamp</p>
+	  </footer>
+	</div>
+<script>
+	var min,text,month,a = new Date();
+	if(a.getHours() < 12){
+		text = "AM";
+	}else{
+	text = "PM";
+	}
+	if(a.getMinutes() <10){
+		min = "0"+a.getMinutes();
+	}else{
+		min = a.getMinutes();
+	}
+	month = a.getMonth() + 1;
+	document.getElementById("time").innerHTML=a.getHours() + ":" +min + " " +text;
+	document.getElementById("dte").innerHTML=a.toDateString();
+</script>
+<script src="weatherapp.js"></script>
+<script src="weatherapp1.js"></script>
+</body>
+</html>
