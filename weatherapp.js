@@ -88,7 +88,7 @@ var bodyImages = [ /*01d-clearSkyDay*/ '1.gif',
 		});
 		$("#icon").html("<h3 style='font-weight:bold'><img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png' width='70' height='70'>"+data.weather[0].main+"</h3>");
 		$("#param1").html("<p>Wind : " + windSpeed  +"m/s" +" "+'<img src="https://cdn0.iconfinder.com/data/icons/large-weather-icons/256/Cold_wind.png" width="50" height="50">'+"<br> Humidity : " + humidity+"%" +" "+'<img src="https://cdn4.iconfinder.com/data/icons/weather-conditions/512/medium_rain-512.png" width="40" height="40">'+"</p>");
-		$("#param2").html("<p>minTemp : " + minTemp +"&degC" +","+ "maxTemp : "+ maxTemp +"&degC"+ "</p>")
+		$("#param2").html("<p>minTemp : " + minTemp +"&degC" +","+ "maxTemp : "+ maxTemp +"&degC"+ "</p>");
 	}
 });
 });
