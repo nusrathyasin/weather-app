@@ -1,0 +1,153 @@
+body,html{
+	background:#091f35;
+	color:white;
+	font-family: 'Cabin Sketch', cursive;
+	background-image: ;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+#num{
+	display:none;
+}
+.box{
+	display:flex;
+	margin-top:20px;
+}
+
+#box1{
+	border:2px solid #b5b6b7;
+	width:350px;
+	height:250px;
+	box-shadow:2px 2px 2px 2px #b5b6b7;
+}
+#locatn {
+	font-weight:bold;
+	margin:40px;
+}
+#locatn img{
+	margin-left:120px;
+}
+#temp{
+	font-size:60px;
+	font-weight:bold;
+}
+#box2{
+	border:2px solid #b5b6b7;
+	width:390px;
+	height:250px;
+	box-shadow:2px 2px 2px 2px #b5b6b7;
+}
+#icon{
+	font-size:25px;
+}
+
+#param1{
+	margin-left:40px;
+	font-size:20px;
+}
+#param2{
+	padding-left:40px;
+	font-size:19px;
+}
+#param3{
+	float:left;
+	padding-left:40px;
+	font-size:20px;
+}
+input[type="text"]{
+	margin-top:20px;
+	color:black;
+	border-radius:10px;
+	width:350px;
+	height:48px;
+	padding:20px;
+}
+#box3{
+	position:static;
+	float:right;
+}
+#time{
+	padding-left:30px;
+	font-size:80px;
+}
+#dte{
+	float:right;
+	font-size:20px;
+}
+@media screen and (max-width: 650px) {
+#box1{
+	border:2px solid #b5b6b7;
+	width:200px;
+	height:250px;
+}
+#temp{
+	font-size:40px;
+}
+
+#box2{
+	border:2px solid #b5b6b7;
+	width:200px;
+	height:250px;
+}
+#param1,#param2,#param3{
+	font-size:12px;
+}
+#time{
+	padding-left:30px;
+	font-size:50px;
+}
+#locatn img{
+	width:200px;
+	height:200px;
+	margin-left:50px;
+}
+#icon img{
+	font-size:10px;
+	width:50px;
+	height:50px;
+}
+#param1 img,#param2 img{
+	width:30px;
+	height:30px;
+}
+input[type="text"]{
+	width:300px;
+	height:48px;
+}
+}
+@media screen and (max-width: 400px) {
+#box1{
+	border:2px solid #b5b6b7;
+	width:150px;
+	height:250px;
+}
+#box2{
+	border:2px solid #b5b6b7;
+	width:150px;
+	height:250px;
+}
+#locatn img{
+	width:150px;
+	height:150px;
+	margin-left:30px;
+}
+#icon img{
+	font-size:10px;
+	width:50px;
+	height:50px;
+}
+#param1,#param2{
+	font-size:9px;
+	margin-left:10px;
+}
+#param1 img{
+	width:30px;
+	height:30px;
+}
+input[type="text"]{
+	width:180px;
+	height:48px;
+}
+}
