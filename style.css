@@ -76,6 +76,11 @@ input[type="text"]{
 	float:right;
 	font-size:20px;
 }
+footer{
+	position:absolute;
+	bottom:0;
+	left:40%;
+}
 @media screen and (max-width: 650px) {
 #box1{
 	border:2px solid #b5b6b7;
