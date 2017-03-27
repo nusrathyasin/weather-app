@@ -55,6 +55,8 @@
 	  </footer>
 	</div>
 <script>
+	var a = setInterval(timer,1000);
+function timer(){
 	var min,text,month,a = new Date();
 	if(a.getHours() < 12){
 		text = "AM";
@@ -69,6 +71,7 @@
 	month = a.getMonth() + 1;
 	document.getElementById("time").innerHTML=a.getHours() + ":" +min + " " +text;
 	document.getElementById("dte").innerHTML=a.toDateString();
+}
 </script>
 <script src="weatherapp.js"></script>
 <script src="weatherapp1.js"></script>
